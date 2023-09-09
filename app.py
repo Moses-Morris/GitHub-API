@@ -23,8 +23,8 @@ def get_info():
     utc_time_str = utc_time.strftime('%Y-%m-%dT%H:%M:%SZ')
 
     # Construct GitHub URLs
-    github_file_url = "https://github.com/username/repo/blob/main/file_name.ext"
-    github_repo_url = "https://github.com/username/repo"
+    github_file_url = "https://github.com/Moses-Morris/GitHub-API/blob/main/app.py"
+    github_repo_url = "https://github.com/Moses-Morris/GitHub-API"
 
     # Create the JSON response
     response_data = {
