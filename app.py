@@ -19,7 +19,6 @@ def get_info():
 
     # Get the current UTC time with a +/-2 minute window
     utc_time = datetime.datetime.now(pytz.utc)
-    utc_time = utc_time.replace(second=0, microsecond=0)
     utc_time_str = utc_time.strftime('%Y-%m-%dT%H:%M:%SZ')
 
     # Construct GitHub URLs
@@ -40,4 +39,4 @@ def get_info():
     return jsonify(response_data)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000)
